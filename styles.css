@@ -14,6 +14,22 @@ html{
     margin-bottom: 32px;
 }
 
+.slideOpaque{
+    animation-name: slideOpaque;
+    animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes slideOpaque {
+    0% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.7;
+        background-color: transparent;
+    }
+}
+
 #header{
     padding: 0 0 0 40px;
     height: 100px;
@@ -21,6 +37,8 @@ html{
     justify-content: space-between;
     background-color: white;
     position: fixed;
+    border-top: #333 1px solid;
+    border-bottom: #333 1px solid;
     z-index: 999;
     align-items: center;
 }
@@ -39,7 +57,7 @@ html{
     margin: 0 15px 0 0;
 }
 
-ul li a{
+.order-list a{
     text-decoration: none;
     color: black;
 }
@@ -105,17 +123,24 @@ ul li a{
 #banner .banner-title{
     position: absolute;
     font-size: 20px;
-    top: 60%;
+    top: 62%;
     left: 40%;
     right: 0;
 }
 
-.banner-title a{
-    padding: 10px 70px 10px 70px;
+.banner-title #banner-main-title{
+    padding: 10px 40px 10px 40px;
     border: 1px solid #fff;
     border-radius: 30px;
     opacity: 0.6;
+    color: black;
+    text-decoration: none;
     background-color: white;
+}
+
+#banner-main-title:hover{
+    background-color: white;
+    opacity: 0.7;
 }
 
 .prev{
@@ -168,11 +193,6 @@ ul li a{
     padding: 0 5px 0 5px;
     
 }
-
-#content{
-    height: 1000px;
-}
-
 .content-title{
     /* height: 500px; */
     text-align: center;
@@ -209,7 +229,8 @@ ul li a{
 
 .content-image-title{
     padding-right: 7vw;
-    
+    padding-left: 7vw;
+    text-align: center;
 }
 
 .content-image-title h4{
@@ -218,10 +239,114 @@ ul li a{
 }
 
 .content-image-title p{
+    margin-bottom: 35px;
     text-align: center;
 }
 
-.content-description img{
+.content-image-title a{
+    color: white;
+    background-color: rgb(156, 156, 156);
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+.content-description{
+    padding-bottom: 100px;
+    /* visibility:hidden; */
+}
+
+.slideLeft{
+    animation: slideLeft;
+    animation: 2s;
+    visibility: visible;
+}
+
+@keyframes slideLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(70%);
+    }
+    50%{
+        opacity: 0;
+        transform: translateX(40%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.content-description .content-image{
     width: 40%;
     height: 100%;
+}
+
+.content-project-view{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-project-view a{
+    font-size: 20px;
+    color: grey;
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+.content-contact{
+    padding-top: 50px;
+    position: relative;
+}
+
+.content-contact img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.content-contact-title{
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    left: 40%;
+}
+
+.content-contact-title h3{
+    color: white;
+    padding-bottom: 30px;
+}
+
+.content-contact-title a{
+    padding: 12px 15px;
+    background-color: rgb(203, 203, 203);
+    border-radius: 60px;
+    color:white;
+}
+
+#footer{
+    height: 550px;
+    overflow: hidden;
+}
+
+.footer-title{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    align-items:center;
+    justify-content: center;
+}
+
+.footer-title a{
+    color: grey;
+    opacity: 0.7;
+    padding: 5px;
+    text-decoration:underline;
+}
+
+.content-contact{
+    text-align: center;
+}
+
+.content-contact p{
+    font-size: 14px;
 }
