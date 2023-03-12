@@ -1,0 +1,258 @@
+
+/* super small devices (< 576px) */
+@media (max-width: 485px) {
+    .order-list{
+        display: none;
+    }
+    .header-image{
+        width: 50%;
+        transform: translateX(0%);
+        margin-top: 20px;
+    }
+    
+    .trailing-icon{
+        display: none;
+    }
+
+    .prev{
+        top: 90%;
+        left: 38%;
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .next{
+        top: 90%;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        left: 52%;
+    }
+
+    .banner-title #banner-main-title{
+        padding: 26px 5px 26px 5px;
+        font-size: 14px;
+    }
+
+    .content-title .content-body{
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .content-contact-title{
+        top: 50%;
+    }
+
+    .content-contact img{
+        height: 440px;
+        width: 100%;
+    }
+
+    .nav-drawer{
+        padding-top: 180px;
+    }
+
+    .nav-drawer a{
+        font-size: 30px;
+    }
+    
+    .nav-drawer .nav-drawer-icon{
+        padding-top: 100px;
+    }
+    
+
+    .menu{
+        display: inline-block;
+
+    }
+    
+    .menu .menu-toggle{
+        line-height: 95px;
+    }
+}
+
+@media (min-width: 485px) and (max-width: 576px) {
+    .order-list{
+        display: none;
+    }
+    .header-image{
+        width: 150px;
+        transform: translateX(50%);
+        margin-top: 20px;
+    }
+    
+    .trailing-icon{
+        display: none;
+    }
+
+    .prev{
+        top: 90%;
+        left: 38%;
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .next{
+        top: 90%;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        left: 52%;
+    }
+
+    .banner-title #banner-main-title{
+        padding: 10px 20px 10px 20px;
+        font-size: 16px;
+    }
+
+    .content-title .content-body{
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .nav-drawer{
+        padding-top: 100px;
+    }
+    
+    
+    .nav-drawer .nav-drawer-icon{
+        padding-top: 100px;
+    }
+    
+
+    .menu{
+        display: inline-block;
+
+    }
+    
+    .menu .menu-toggle{
+        line-height: 90px;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and 768) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .order-list{
+        display: none;
+    }
+
+    .header-image{
+        width: 160px;
+        transform: translateX(100%);
+        margin-top: 20px;
+    }
+
+    .trailing-icon{
+        display: none;
+    }
+
+    .content-title .content-body{
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .menu{
+        display: inline-block;
+
+    }
+    
+    .menu .menu-toggle{
+        line-height: 90px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 992px) {
+    .order-list{
+        display: none;
+    }
+
+    .trailing-icon{
+        display: none;
+    }
+
+    .header-image{
+        width: 160px;
+        transform: translateX(115%);
+        margin-top: 20px;
+    }
+
+    .nav-drawer a{
+        font-size: 50px;
+    }
+
+    .nav-drawer{
+        padding-top: 300px;
+    }
+    
+    .nav-drawer .nav-drawer-icon{
+        padding-top: 200px;
+    }
+    
+
+    .menu{
+        display: inline-block;
+
+    }
+    
+    .menu .menu-toggle{
+        line-height: 95px;
+    }
+
+}
+
+@media (width: 1024px){
+    .order-list{
+        display: none;
+    }
+
+    .trailing-icon{
+        display: none;
+    }
+
+
+    #header .header-image{
+        width: 160px;
+        transform: translateX(175%);
+        margin-top: 25px;
+    }
+
+    .nav-drawer a{
+        font-size: 30px;
+        padding-top: 30px;
+    }
+
+    .nav-drawer{
+        padding-top: 130px;
+    }
+    
+    .nav-drawer .nav-drawer-icon{
+        padding-top: 60px;
+    }
+    
+
+    .menu{
+        display: inline-block;
+
+    }
+    
+    .menu .menu-toggle{
+        line-height: 95px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .header-image{
+        width: 160px;
+        transform: translateX(50%);
+        margin-top: 10px;
+    }
+}

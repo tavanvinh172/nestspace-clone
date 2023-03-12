@@ -1,5 +1,7 @@
 let slideIndex = 0;
 showSlides();
+openNav();
+closeNav();
 window.onscroll = function() {
   scrollFunction(); 
 };
@@ -28,7 +30,7 @@ function showSlides(n) {
   }else if(slideIndex - 1 === 2){
     mainTitle.textContent = "Duet Apartment | More";
   }else if(slideIndex - 1 === 3){
-    mainTitle.textContent = "Revival House | Echo of the body";
+    mainTitle.textContent = "Revival House | More";
   }
   setTimeout(showSlides, 5000);
 }
@@ -41,4 +43,12 @@ function scrollFunction() {
     console.log(`aaaaaa: ${document.documentElement.scrollHeight}`);
     document.getElementsByClassName("content-description").className = "slideLeft";
   }
+}
+
+function openNav(){
+  document.getElementById("mySideNav").style.width = "100%";
+}
+
+function closeNav(){
+  document.getElementById("mySideNav").style.width = "0";
 }
